@@ -1,23 +1,29 @@
 pipeline {
     agent any
+
     stages {
         stage('Checkout') {
             steps {
-                git clone 'https://github.com/akjoshi12/Group-E-Deployment-of-AI---Model-Deployment-and-CI-CD-With-Jenkins-and-Github.git'
-                sh 'cd Group-E-Deployment-of-AI---Model-Deployment-and-CI-CD-With-Jenkins-and-Github '
+                // Use the built-in Jenkins Git plugin to clone the repo
+                git branch: 'main', url: 'https://github.com/akjoshi12/Group-E-Deployment-of-AI---Model-Deployment-and-CI-CD-With-Jenkins-and-Github.git'
             }
         }
+
         stage('Install Dependencies') {
             steps {
-                sh 'pip install -r requirements.txt'
+                // Install required dependencies from requirements.txt
+                sh 'pip install --user -r requirements.txt'
             }
         }
+
         stage('Run Tests') {
             steps {
-                sh 'python tests/test_model.py'
+                // Run your test script
+                sh 'python3 tests/test_model.py'
             }
         }
     }
+
     post {
         success {
             echo 'All tests passed!'
