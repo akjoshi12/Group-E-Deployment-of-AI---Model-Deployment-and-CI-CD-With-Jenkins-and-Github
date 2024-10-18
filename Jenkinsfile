@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/akjoshi12/Group-E-Deployment-of-AI---Model-Deployment-and-CI-CD-With-Jenkins-and-Github.git'
+                git clone 'https://github.com/akjoshi12/Group-E-Deployment-of-AI---Model-Deployment-and-CI-CD-With-Jenkins-and-Github.git'
+                sh 'cd Group-E-Deployment-of-AI---Model-Deployment-and-CI-CD-With-Jenkins-and-Github '
             }
         }
         stage('Install Dependencies') {
