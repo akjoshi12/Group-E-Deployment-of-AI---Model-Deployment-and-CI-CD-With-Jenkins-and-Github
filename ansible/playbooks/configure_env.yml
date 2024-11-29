@@ -1,0 +1,15 @@
+- name: Configure Environment for Sentiment Analysis
+  hosts: all
+  tasks:
+    - name: Install necessary packages
+      ansible.builtin.yum:
+        name:
+          - python3
+          - pip
+          - git
+        state: present
+
+    - name: Clone GitHub repository
+      ansible.builtin.git:
+        repo: "https://github.com/your_repo/sentiment-analysis-automation.git"
+        dest: /opt/sentiment-analysis
