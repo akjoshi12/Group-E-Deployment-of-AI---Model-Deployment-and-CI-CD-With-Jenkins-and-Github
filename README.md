@@ -65,4 +65,15 @@ This project is part of the Retail Industry Project module, where the objective 
     - Provides a comprehensive guide on the project, including setup instructions,
 
 ### Current status
+### Creating an Ansible
 ![image](https://github.com/user-attachments/assets/7a3e1adb-2431-4fda-9d3a-819a68b4b6ff)
+
+### Creating a Playbook
+![image](https://github.com/user-attachments/assets/36498436-9817-4b0e-a683-4a42f1452c70)
+
+### Running Playbook
+
+![image](https://github.com/user-attachments/assets/7c14154d-9715-4bf3-9d35-51e14ed80edd)
+
+
+
