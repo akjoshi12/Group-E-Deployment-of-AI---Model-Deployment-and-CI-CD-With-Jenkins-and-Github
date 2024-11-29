@@ -1,1 +1,18 @@
+- name: Deploy Sentiment Analysis Model to Testing
+  hosts: testing
+  tasks:
+    - name: Install Python dependencies
+      ansible.builtin.yum:
+        name:
+          - python3
+          - pip
+        state: present
+
+    - name: Copy model files
+      ansible.builtin.copy:
+        src: /local/path/to/model/
+        dest: /remote/path/to/model/
+
+    - name: Start model API
+      ansible.builtin.shell: python3 /remote/path/to/model/api.py
 
