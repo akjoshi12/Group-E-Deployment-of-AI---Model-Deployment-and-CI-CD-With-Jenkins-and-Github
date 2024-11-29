@@ -64,3 +64,5 @@ This project is part of the Retail Industry Project module, where the objective 
   - **README**:
     - Provides a comprehensive guide on the project, including setup instructions,
 
+### Current status
+![image](https://github.com/user-attachments/assets/7a3e1adb-2431-4fda-9d3a-819a68b4b6ff)
