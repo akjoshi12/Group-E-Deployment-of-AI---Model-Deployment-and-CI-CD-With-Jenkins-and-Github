@@ -62,5 +62,30 @@ This project is part of the Retail Industry Project module, where the objective 
   - **Deployment**:
     - Ansible playbooks and Jenkins configuration files for managing testing, staging, and production environments.
   - **README**:
-    - Provides a comprehensive guide on the project, including setup instructions, usage guides, and explanations of the folder structure.
+    - Provides a comprehensive guide on the project, including setup instructions,
+
+
+usage guides, and explanations of the folder structure.
+
+├── Documentation/
+│   ├── requirements_document.md
+│   ├── design_specifications.md
+│   ├── project_plan.pdf
+├── Data/
+│   ├── amazon_uk_shoes_reviews.csv
+│   ├── cleaned_reviews.csv
+├── Source/
+│   ├── data_preprocessing.py
+│   ├── model_training.py
+│   ├── helper_scripts/
+│       ├── visualization.py
+│       ├── evaluation.py
+├── Deployment/
+│   ├── playbooks/
+│       ├── deploy.yml
+│       ├── configure_env.yml
+│   ├── hosts.ini
+│   ├── Jenkinsfile
+├── README.md
+├── requirements.txt
 
