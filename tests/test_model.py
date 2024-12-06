@@ -3,11 +3,11 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from joblib import load
 
 # Load LSTM model and tokenizer
-lstm_model = load('models/LSTM_model.pkl')
+lstm_model = load('/Users/atrijoshi/Downloads/Manual Library/AI&DS/SEMESTER 3/DevOps/Final Term/GroupE_CICD/models/LSTM_model.pkl')
 
 # Try loading the tokenizer, or rebuild if not found
 try:
-    tokenizer = load('models/tokenizer.pkl')
+    tokenizer = load('/Users/atrijoshi/Downloads/Manual Library/AI&DS/SEMESTER 3/DevOps/Final Term/GroupE_CICD/models/tokenizer.pkl')
 except FileNotFoundError:
     print("Tokenizer not found. Rebuilding tokenizer...")
     from tensorflow.keras.preprocessing.text import Tokenizer
